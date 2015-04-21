@@ -33,6 +33,11 @@ namespace ECommon.Remoting
         private int _scanTimeoutRequestTaskId;
         private int _isReconnecting;
 
+        public bool IsStopped
+        {
+            get { return _tcpClient.IsStopped; }
+        }
+
         public SocketRemotingClient(IPEndPoint serverEndPoint, RemotingClientSetting setting = null, ISocketClientEventListener eventListener = null)
         {
             _sync = new object();
@@ -47,11 +52,12 @@ namespace ECommon.Remoting
             _logger = ObjectContainer.Resolve<ILoggerFactory>().Create(GetType().FullName);
         }
 
-        public void Start(int connectTimeoutMilliseconds = 5000)
+        public SocketRemotingClient Start(int connectTimeoutMilliseconds = 5000)
         {
             StartTcpClient(connectTimeoutMilliseconds);
             StartHandleMessageWorker();
             StartScanTimeoutRequestTask();
+            return this;
         }
         public void Shutdown()
         {
@@ -149,7 +155,7 @@ namespace ECommon.Remoting
         {
             if (_tcpClient.IsStopped)
             {
-                _logger.Error("Not allowed to reconnect server as the tcp client is stopped.");
+                _logger.Info("Stop to reconnect to server as the tcp client is stopped.");
                 return;
             }
             if (_tcpClient.ConnectionStatus == TcpConnectionStatus.Established)
@@ -158,13 +164,13 @@ namespace ECommon.Remoting
             }
             if (Interlocked.CompareExchange(ref _isReconnecting, 1, 0) != 0)
             {
-                _logger.Info("Reconnect server is in progress, ignore the current reconnecting.");
+                _logger.Info("Reconnect to server is in progress, ignore the current reconnecting.");
                 return;
             }
 
             Thread.Sleep(_setting.ReconnectInterval);
 
-            _logger.InfoFormat("Try to reconnect to server:{0}.", _serverEndPoint);
+            _logger.InfoFormat("Try to reconnect to server: {0}.", _serverEndPoint);
 
             var hasException = false;
             try
