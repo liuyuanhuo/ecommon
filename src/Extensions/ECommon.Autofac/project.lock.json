@@ -1,0 +1,94 @@
+{
+  "locked": false,
+  "version": -9998,
+  "projectFileDependencyGroups": {
+    "": [
+      "ECommon >= 1.0.0-*",
+      "Autofac >= 4.0.0-alpha2"
+    ],
+    "DNX,Version=v4.5.1": []
+  },
+  "libraries": {
+    "Autofac/4.0.0-alpha2": {
+      "serviceable": false,
+      "sha": "nlKsjAyDK827ARwrQL54bq80NcadZTKas7vqJfc/ZEqgmMFlTOESvHKy97Ny7IGChAW98qJZQ7Wlmp5xDVUbnw==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [
+            "mscorlib",
+            "System",
+            "System.Core",
+            "Microsoft.CSharp"
+          ],
+          "runtimeAssemblies": [
+            "lib/dnx451/Autofac.dll"
+          ],
+          "compileAssemblies": [
+            "lib/dnx451/Autofac.dll"
+          ]
+        }
+      },
+      "files": [
+        "Autofac.4.0.0-alpha2.nupkg",
+        "Autofac.4.0.0-alpha2.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/dnx451/Autofac.dll",
+        "lib/dnx451/Autofac.xml",
+        "lib/dnxcore50/Autofac.dll",
+        "lib/dnxcore50/Autofac.xml",
+        "lib/portable-net45+win+wpa81+wp80/Autofac.dll",
+        "lib/portable-net45+win+wpa81+wp80/Autofac.xml"
+      ]
+    },
+    "ECommon/1.0.0": {
+      "serviceable": false,
+      "sha": "Gvf1udJvcY4YzzjUePsn4413BSBe1MF4PUguubwAJFOqQEmY9Vj0SNcV4/001e/XzS5q0kxAERswQ/kHxFc3hg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/ECommon.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/ECommon.dll"
+          ]
+        }
+      },
+      "files": [
+        "ECommon.1.0.0.nupkg",
+        "ECommon.1.0.0.nupkg.sha512",
+        "ECommon.nuspec",
+        "lib/net40/ECommon.dll",
+        "lib/net40/ECommon.xml"
+      ]
+    },
+    "ECommon.Autofac/1.0.0": {
+      "serviceable": false,
+      "sha": "HsMGV7M2yAv2Ny8S/J1+9X95pdsAWEp9m+MRia2dtpqORntb4Tp6aTMPTvLhQqZaSUaEIZ2/GAof+guwblQj3g==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "ecommon": "1.0.1",
+            "Autofac": "3.3.0"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/ECommon.Autofac.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/ECommon.Autofac.dll"
+          ]
+        }
+      },
+      "files": [
+        "ECommon.Autofac.1.0.0.nupkg",
+        "ECommon.Autofac.1.0.0.nupkg.sha512",
+        "ECommon.Autofac.nuspec",
+        "lib/net40/ECommon.Autofac.dll",
+        "lib/net40/ECommon.Autofac.xml"
+      ]
+    }
+  }
+}

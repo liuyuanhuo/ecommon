@@ -1,0 +1,17 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "",
+  "authors": [ "" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "ECommon": "1.0.0-*",
+    "Autofac": "4.0.0-alpha2"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}

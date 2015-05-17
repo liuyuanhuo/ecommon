@@ -1,0 +1,97 @@
+{
+  "locked": false,
+  "version": -9998,
+  "projectFileDependencyGroups": {
+    "": [
+      "ECommon >= 1.0.0-*",
+      "log4net >= 2.0.3"
+    ],
+    "DNX,Version=v4.5.1": []
+  },
+  "libraries": {
+    "ECommon/1.0.0": {
+      "serviceable": false,
+      "sha": "Gvf1udJvcY4YzzjUePsn4413BSBe1MF4PUguubwAJFOqQEmY9Vj0SNcV4/001e/XzS5q0kxAERswQ/kHxFc3hg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/ECommon.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/ECommon.dll"
+          ]
+        }
+      },
+      "files": [
+        "ECommon.1.0.0.nupkg",
+        "ECommon.1.0.0.nupkg.sha512",
+        "ECommon.nuspec",
+        "lib/net40/ECommon.dll",
+        "lib/net40/ECommon.xml"
+      ]
+    },
+    "ECommon.Log4Net/1.0.0": {
+      "serviceable": false,
+      "sha": "oCXxQ5I99zu9eWnhOViDs3McMzcGxQzSRl7xlhAVdLCN3KHzuiWoiHwG1cR4KJWz+KT92hXNA69mYw53s1ZaXg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "ecommon": "1.0.1",
+            "log4net": "2.0.3"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/ECommon.Log4Net.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/ECommon.Log4Net.dll"
+          ]
+        }
+      },
+      "files": [
+        "ECommon.Log4Net.1.0.0.nupkg",
+        "ECommon.Log4Net.1.0.0.nupkg.sha512",
+        "ECommon.Log4Net.nuspec",
+        "lib/net40/ECommon.Log4Net.dll",
+        "lib/net40/ECommon.Log4Net.xml"
+      ]
+    },
+    "log4net/2.0.3": {
+      "serviceable": false,
+      "sha": "rxMHzK5efGPo5XtRnuUGO4tfW5l74Aji6kVmtMAt2SgcB5PHBNtNY7yj2LCI2VtKrLPO7kCKR6kH6lIZggq3Gg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40-full/log4net.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40-full/log4net.dll"
+          ]
+        }
+      },
+      "files": [
+        "log4net.2.0.3.nupkg",
+        "log4net.2.0.3.nupkg.sha512",
+        "log4net.nuspec",
+        "lib/net10-full/log4net.dll",
+        "lib/net10-full/log4net.xml",
+        "lib/net11-full/log4net.dll",
+        "lib/net11-full/log4net.xml",
+        "lib/net20-full/log4net.dll",
+        "lib/net20-full/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35-full/log4net.dll",
+        "lib/net35-full/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40-full/log4net.dll",
+        "lib/net40-full/log4net.xml"
+      ]
+    }
+  }
+}
